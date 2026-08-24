@@ -285,7 +285,7 @@
     align-items:center;
   }
   @media (max-width:900px){ .ubicacion-grid{grid-template-columns:1fr; gap:3rem;} }
-  .ubicacion h2{font-size:clamp(6.2rem, 5vw, 3.6rem); max-width:12ch;}
+  .ubicacion h2{font-size:clamp(3.2rem, 5vw, 3.6rem); max-width:12ch;}
   .ubicacion p{color:var(--paper-dim); margin-top:1.4rem; max-width:46ch;}
 
 
@@ -732,12 +732,13 @@
     text-align:center;
   }
   .renders{background:var(--ink);}
+  .renders{h2{font-size:clamp(3.2rem, 4vw, 1.6rem); max-width:12ch;}}
 
   /* ---------- Galería mosaico (masonry) ---------- */
   /* ---------- Cover slider (portada única + flechas) ---------- */
   .cover-slider{
     position:relative;
-    margin-top:0;
+    margin-top:20px;
   }
   .cover-stage{
     position:relative;
