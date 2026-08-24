@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BROWN · M2D — San Carlos de Bariloche</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="directorio" aria-label="Directorio de niveles">
+  <div class="directorio-inner">
+    <a href="#contacto" data-label="Contacto"><span>06</span></a>
+    <a href="#recorridos" data-label="Recorridos virtuales"><span>05</span></a>
+    <a href="#terminaciones" data-label="Terminaciones"><span>04</span></a>
+    <a href="#ubicacion" data-label="Ubicación"><span>03</span></a>
+    <a href="#renders" data-label="Imagenes del proyecto"><span>02</span></a>
+    <a href="#hero" data-label="Acceso"><span>01</span></a>
+
+  </div>
+  <div class="directorio-caption" id="directorio-caption"></div>
+</nav>
+
+<nav class="directorio-mobile" aria-label="Navegación de secciones">
+  <a href="#contacto" data-label="Contacto">06 · Contacto</a>
+  <a href="#recorridos" data-label="Recorridos virtuales">05 · Recorridos</a>
+  <a href="#terminaciones" data-label="Terminaciones">04 · Terminaciones</a>
+  <a href="#ubicacion" data-label="Ubicación">03 · Ubicación</a>
+  <a href="#renders" data-label="Imagenes del proyecto">02 · Fotos</a>
+  <a href="#hero" data-label="Acceso">01 · Acceso</a>
+  
+</nav>
+
+<div class="topbar">
+  <span class="mark">EDIFICIO BROWN · M2D — </span>
+  <span class="hide-mobile">San Carlos de Bariloche</span>
+</div>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">M2D Desarrollos</p>
+        <h1>EDIF<em>I</em>CIO<br>BR<em>O</em>WN</h1>
+        <p class="hero-sub">combina calidad constructiva, eficiencia energética, diseño contemporáneo y materiales seleccionados para ofrecer una excelente experiencia de uso y una inversión sólida a largo plazo.</p>
+              <a class="cta-pill" href="unidades.html">Ver unidades disponibles<span aria-hidden="true">→</span></a>
+        <div class="hero-meta">
+          <div><strong>Ubicación</strong>San Carlos de Bariloche</div>
+          <div><strong>Departamentos</strong>1 y 2 ambientes</div>
+          <div><strong>Locales comerciales</strong>Sobre calle Brown</div>
+          <div><strong>Entrega</strong>Estimada, oct. 2028</div>
+        </div>
+      </div>
+  </section>
+    </div>
+
+
+  <section class="renders" id="renders">
+    <div class="cover-slider" data-cover="renders">
+      <button class="cover-stage" type="button" id="renders-stage-btn" aria-label="Ver imagen ampliada">
+        <img id="renders-stage-img" src="" alt="">
+      </button>
+      <button type="button" class="cover-nav cover-nav--prev" data-cover-prev="renders" aria-label="Imagen anterior">‹</button>
+      <button type="button" class="cover-nav cover-nav--next" data-cover-next="renders" aria-label="Imagen siguiente">›</button>
+      <div class="cover-meta">
+        <span class="cover-caption" id="renders-stage-caption"></span>
+        <span class="cover-counter" id="renders-stage-counter"></span>
+      </div>
+    </div>
+
+    <div class="masonry-grid" data-gallery="renders" hidden>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/fachada-principal.jpg" data-thumb="assets/renders/thumb/fachada-principal.jpg" data-title="Fachada principal — Vista desde calle Brown">
+        <img src="assets/renders/thumb/fachada-principal.jpg" alt="Render de la fachada principal del edificio" loading="lazy">
+        <span class="masonry-caption">Fachada principal</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-2-ambientes.jpg" data-thumb="assets/renders/thumb/interior-2-ambientes.jpg" data-title="Interior — Unidad de 2 ambientes">
+        <img src="assets/renders/thumb/interior-2-ambientes.jpg" alt="Render de interior de una unidad de 2 ambientes" loading="lazy">
+        <span class="masonry-caption">Interior — 2 ambientes</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/cafeteria.jpg" data-thumb="assets/renders/thumb/cafeteria.jpg" data-title="Cafetería — Espacio común de planta baja">
+        <img src="assets/renders/thumb/cafeteria.jpg" alt="Render de la cafetería, espacio común del edificio" loading="lazy">
+        <span class="masonry-caption">Cafetería</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/perspectiva-aerea.jpg" data-thumb="assets/renders/thumb/perspectiva-aerea.jpg" data-title="Perspectiva aérea — El conjunto y sus terrazas">
+        <img src="assets/renders/thumb/perspectiva-aerea.jpg" alt="Render en perspectiva aérea del edificio" loading="lazy">
+        <span class="masonry-caption">Perspectiva aérea</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-monoambiente-1.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-1.jpg" data-title="Interior — Monoambiente, opción 1">
+        <img src="assets/renders/thumb/interior-monoambiente-1.jpg" alt="Render de interior de un monoambiente" loading="lazy">
+        <span class="masonry-caption">Monoambiente — opción 1</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/fachada-contrafrente.jpg" data-thumb="assets/renders/thumb/fachada-contrafrente.jpg" data-title="Fachada contrafrente — Vista posterior con jardín">
+        <img src="assets/renders/thumb/fachada-contrafrente.jpg" alt="Render de la fachada de contrafrente" loading="lazy">
+        <span class="masonry-caption">Contrafrente</span>
+      </button>
+      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-monoambiente-2.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-2.jpg" data-title="Interior — Monoambiente, opción 2">
+        <img src="assets/renders/thumb/interior-monoambiente-2.jpg" alt="Render de interior de un monoambiente, otra vista" loading="lazy">
+        <span class="masonry-caption">Monoambiente — opción 2</span>
+      </button>
+    </div>
+  </section>
+
+
+
+  <section class="ubicacion" id="ubicacion">
+    <div class="ubicacion-grid">
+      <div>
+        <p class="eyebrow">El barrio</p>
+        <h2>BROWN 34</h2>
+        <p>Una ubicación pensada para disfrutar la ciudad. En Brown 34 estás cerca de todo: el Lago Nahuel Huapi, el Centro Cívico, la gastronomía, las chocolaterías, los comercios y los servicios que hacen al día a día de Bariloche. Una ubicación estratégica tanto para vivir como para invertir, con los principales atractivos de la ciudad a pocos minutos.</p>
+      </div>
+      <div class="mapa">
+        <iframe
+          class="mapa-iframe"
+          src="https://www.google.com/maps?q=-41.1466983,-71.3121511&z=17&output=embed"
+          title="Ubicación del edificio en Google Maps"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-hidden="true"
+          tabindex="-1"
+        ></iframe>
+        <a
+          class="mapa-link"
+          href="https://www.google.com/maps/place/Almte.+Brown+34,+R8400+San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@-41.1466942,-71.314726,849m/data=!3m2!1e3!4b1!4m5!3m4!1s0x961a7b3f92617a61:0x8a829b4ce4bdac2a!8m2!3d-41.1466983!4d-71.3121511?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ver Almte. Brown 34, San Carlos de Bariloche en Google Maps"
+        >
+          <span class="mapa-cta">Ver en Google Maps <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <section class="cta-band" id="cta-band">
+    <p class="eyebrow">M2D Desarrollos</p>
+    <h2>Tu próxima unidad te espera en Brown</h2>
+    <p class="cta-band-text">Unidades de 1 dormitorio y monoambientes, locales comerciales y cocheras. Dejanos tus datos y te contactamos con toda la información: plantas, precios y forma de pago.</p>
+    <a class="cta-pill" href="#contacto">Quiero más información <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="terminaciones" id="terminaciones">
+    <p class="eyebrow">Terminaciones</p>
+    <h2>CALIDAD Y CONFORT</h2>
+    <div class="specs">
+      <div class="spec">
+        <span class="spec-num">01 · COCINA</span>
+        <h3>Cocinas equipadas</h3>
+        <ul>
+          <li>Mesada en cuarzo tipo Silestone</li>
+          <li>Muebles bajo mesada y alacenas completas</li>
+          <li>Cocina a gas Longvie</li>
+          <li>Espacio previsto para lavarropas</li>
+        </ul>
+      </div>
+      <div class="spec">
+        <span class="spec-num">02 · INTERIOR</span>
+        <h3>Pisos y placares</h3>
+        <ul>
+          <li>Porcelanato de alta calidad</li>
+          <li>Placares con frentes e interiores terminados</li>
+          <li>Carpintería en aluminio anodizado línea A30</li>
+          <li>Vidriado hermético (DVH) en aberturas</li>
+        </ul>
+      </div>
+      <div class="spec">
+        <span class="spec-num">03 · BAÑO</span>
+        <h3>Baños completos</h3>
+        <ul>
+          <li>Artefactos Ferrum</li>
+          <li>Grifería FV</li>
+          <li>Mampara de vidrio fija en ducha</li>
+          <li>Portero visor con cámara de seguridad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="recorridos" id="recorridos">
+    <div class="amenities-head">
+      <p class="eyebrow">Recorridos virtuales</p>
+      <h2>Recorre el edificio</h2>
+      <p>Videos de recorrido sobre el proyecto de arquitectura, espacio por espacio.</p>
+    </div>
+
+    <div class="cover-slider cover-slider--video" data-cover="recorridos">
+      <div class="cover-stage cover-stage--video">
+        <video id="recorridos-stage-video" controls playsinline preload="metadata"></video>
+      </div>
+      <button type="button" class="cover-nav cover-nav--prev" data-cover-prev="recorridos" aria-label="Recorrido anterior">‹</button>
+      <button type="button" class="cover-nav cover-nav--next" data-cover-next="recorridos" aria-label="Recorrido siguiente">›</button>
+      <div class="cover-meta">
+        <span class="cover-caption" id="recorridos-stage-caption"></span>
+        <span class="cover-counter" id="recorridos-stage-counter"></span>
+      </div>
+    </div>
+
+    <div class="video-grid" data-gallery="recorridos" hidden>
+      <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-ingreso.mp4" data-poster="assets/videos/poster/recorrido-ingreso.jpg" data-title="Recorrido — Ingreso">
+        <img src="assets/videos/poster/recorrido-ingreso.jpg" alt="Cuadro del recorrido en video del ingreso" loading="lazy">
+        <span class="video-card-play" aria-hidden="true">▶</span>
+        <span class="plano-card-label"><strong>Ingreso</strong>Hall de acceso al edificio</span>
+      </button>
+      <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-cafeteria.mp4" data-poster="assets/videos/poster/recorrido-cafeteria.jpg" data-title="Recorrido — Cafetería">
+        <img src="assets/videos/poster/recorrido-cafeteria.jpg" alt="Cuadro del recorrido en video de la cafetería" loading="lazy">
+        <span class="video-card-play" aria-hidden="true">▶</span>
+        <span class="plano-card-label"><strong>Cafetería</strong>Espacio común de planta baja</span>
+      </button>
+      <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-2-ambientes.mp4" data-poster="assets/videos/poster/recorrido-2-ambientes.jpg" data-title="Recorrido — Unidad de 2 ambientes">
+        <img src="assets/videos/poster/recorrido-2-ambientes.jpg" alt="Cuadro del recorrido en video de una unidad de 2 ambientes" loading="lazy">
+        <span class="video-card-play" aria-hidden="true">▶</span>
+        <span class="plano-card-label"><strong>Unidad de 2 ambientes</strong>Recorrido completo</span>
+      </button>
+      <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-monoambiente-1.mp4" data-poster="assets/videos/poster/recorrido-monoambiente-1.jpg" data-title="Recorrido — Monoambiente, opción 1">
+        <img src="assets/videos/poster/recorrido-monoambiente-1.jpg" alt="Cuadro del recorrido en video de un monoambiente" loading="lazy">
+        <span class="video-card-play" aria-hidden="true">▶</span>
+        <span class="plano-card-label"><strong>Monoambiente</strong>Opción 1</span>
+      </button>
+      <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-monoambiente-2.mp4" data-poster="assets/videos/poster/recorrido-monoambiente-2.jpg" data-title="Recorrido — Monoambiente, opción 2">
+        <img src="assets/videos/poster/recorrido-monoambiente-2.jpg" alt="Cuadro del recorrido en video de un monoambiente, otra unidad" loading="lazy">
+        <span class="video-card-play" aria-hidden="true">▶</span>
+        <span class="plano-card-label"><strong>Monoambiente</strong>Opción 2</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section class="contacto" id="contacto">
+    <div class="contacto-grid">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Pedí más información</h2>
+        <p>Dejanos tus datos y te contactamos con el detalle de plantas, precios y forma de pago.</p>
+      </div>
+      <form class="form" onsubmit="event.preventDefault();">
+        <div class="field">
+          <label for="nombre">Nombre y apellido</label>
+          <input id="nombre" type="text" name="nombre" placeholder="Nombre y apellido" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="email" placeholder="nombre@correo.com" required>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" name="telefono" placeholder="+54 9 0000000">
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos tu interes"></textarea>
+        </div>
+        <button class="btn" type="submit">Solicitar información</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<a
+  class="whatsapp-float"
+  id="whatsapp-float"
+  href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Edificio%20Brown"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Escribinos por WhatsApp"
+>
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path fill="currentColor" d="M16.02 3C9.4 3 4 8.37 4 15c0 2.36.66 4.56 1.8 6.44L4 29l7.76-1.74A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.63 28 15S22.64 3 16.02 3Zm0 21.9c-2.1 0-4.06-.6-5.72-1.65l-.41-.25-4.6 1.03 1.02-4.48-.27-.44A9.87 9.87 0 0 1 6.1 15c0-5.47 4.46-9.9 9.92-9.9 5.47 0 9.92 4.43 9.92 9.9 0 5.47-4.45 9.9-9.92 9.9Zm5.46-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.47 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
+  </svg>
+</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="lightbox-bar">
+    <span class="lightbox-title" id="lightbox-title">—</span>
+    <div class="lightbox-actions">
+      <button type="button" id="lightbox-zoom-out" aria-label="Alejar">−</button>
+      <span class="lightbox-zoom-level" id="lightbox-zoom-level">100%</span>
+      <button type="button" id="lightbox-zoom-in" aria-label="Acercar">+</button>
+      <a id="lightbox-download" href="#" download class="lightbox-download">Descargar PDF</a>
+      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+  <button type="button" class="lightbox-nav lightbox-nav--prev" id="lightbox-prev" aria-label="Imagen anterior">‹</button>
+  <button type="button" class="lightbox-nav lightbox-nav--next" id="lightbox-next" aria-label="Imagen siguiente">›</button>
+  <div class="lightbox-viewport" id="lightbox-viewport">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<footer>
+  <span>BROWN - M2D · San Carlos de Bariloche</span>
+  <span>M2D desarrollos · Desarrollos inmobiliarios</span>
+</footer>
+
+<script>
+  const links = document.querySelectorAll('.directorio a');
+  const mobileLinks = document.querySelectorAll('.directorio-mobile a');
+  const caption = document.getElementById('directorio-caption');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
+
+  const setActive = (index) => {
+    links.forEach(l => l.classList.remove('active'));
+    mobileLinks.forEach(l => l.classList.remove('active'));
+
+    const link = links[index];
+    const mobileLink = mobileLinks[index];
+
+    if(link){
+      link.classList.add('active');
+      caption.textContent = link.dataset.label;
+      caption.style.top = link.getBoundingClientRect().top + 'px';
+      caption.classList.add('show');
+    }
+    if(mobileLink){
+      mobileLink.classList.add('active');
+      mobileLink.scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
+    }
+  };
+
+  links.forEach((link, idx) => {
+    link.addEventListener('mouseenter', () => {
+      caption.textContent = link.dataset.label;
+      caption.style.top = link.getBoundingClientRect().top + 'px';
+      caption.classList.add('show');
+    });
+    link.addEventListener('mouseleave', () => {
+      caption.classList.remove('show');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const idx = sections.indexOf(entry.target);
+        if(idx > -1) setActive(idx);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(s => { if(s) observer.observe(s); });
+
+  /* ---------- Lightbox de planos ---------- */
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxDownload = document.getElementById('lightbox-download');
+  const lightboxViewport = document.getElementById('lightbox-viewport');
+  const zoomLevelLabel = document.getElementById('lightbox-zoom-level');
+  const btnZoomIn = document.getElementById('lightbox-zoom-in');
+  const btnZoomOut = document.getElementById('lightbox-zoom-out');
+  const btnClose = document.getElementById('lightbox-close');
+  const btnPrev = document.getElementById('lightbox-prev');
+  const btnNext = document.getElementById('lightbox-next');
+
+  let zoom = 1;
+  const ZOOM_MIN = 1;
+  const ZOOM_MAX = 3.5;
+  const ZOOM_STEP = 0.4;
+
+  let currentGroup = [];
+  let currentIndex = 0;
+
+  const applyZoom = () => {
+    lightboxImg.style.width = (zoom * 100) + '%';
+    zoomLevelLabel.textContent = Math.round(zoom * 100) + '%';
+  };
+
+  const renderCard = (card) => {
+    const full = card.dataset.full;
+    const pdf = card.dataset.pdf;
+    const title = card.dataset.title || '';
+
+    lightboxImg.src = full;
+    lightboxImg.alt = title;
+    lightboxTitle.textContent = title;
+
+    if(pdf){
+      lightboxDownload.href = pdf;
+      lightboxDownload.setAttribute('download', (pdf.split('/').pop()) || 'plano.pdf');
+      lightboxDownload.textContent = 'Descargar PDF';
+    } else {
+      lightboxDownload.href = full;
+      lightboxDownload.setAttribute('download', (full.split('/').pop()) || 'imagen.jpg');
+      lightboxDownload.textContent = 'Descargar imagen';
+    }
+    lightboxDownload.style.display = '';
+
+    zoom = 1;
+    applyZoom();
+  };
+
+  const updateNavVisibility = () => {
+    const multi = currentGroup.length > 1;
+    btnPrev.style.display = multi ? '' : 'none';
+    btnNext.style.display = multi ? '' : 'none';
+  };
+
+  const goTo = (index) => {
+    if(!currentGroup.length) return;
+    currentIndex = (index + currentGroup.length) % currentGroup.length;
+    renderCard(currentGroup[currentIndex]);
+  };
+
+  const openLightbox = (card) => {
+    const groupEl = card.closest('.masonry-grid, .carousel-track, .planos-grid');
+    currentGroup = groupEl ? Array.from(groupEl.querySelectorAll('.plano-card, .masonry-item')) : [card];
+    currentIndex = Math.max(0, currentGroup.indexOf(card));
+    updateNavVisibility();
+    renderCard(card);
+
+    lightbox.classList.add('show');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('show');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.plano-card, .masonry-item').forEach(card => {
+    card.addEventListener('click', () => openLightbox(card));
+  });
+
+  btnPrev.addEventListener('click', () => goTo(currentIndex - 1));
+  btnNext.addEventListener('click', () => goTo(currentIndex + 1));
+
+  btnZoomIn.addEventListener('click', () => {
+    zoom = Math.min(ZOOM_MAX, +(zoom + ZOOM_STEP).toFixed(2));
+    applyZoom();
+  });
+  btnZoomOut.addEventListener('click', () => {
+    zoom = Math.max(ZOOM_MIN, +(zoom - ZOOM_STEP).toFixed(2));
+    applyZoom();
+  });
+  btnClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox || e.target === lightboxViewport){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if(!lightbox.classList.contains('show')) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === '+' || e.key === '=') btnZoomIn.click();
+    if(e.key === '-') btnZoomOut.click();
+    if(e.key === 'ArrowRight') goTo(currentIndex + 1);
+    if(e.key === 'ArrowLeft') goTo(currentIndex - 1);
+  });
+
+  /* ---------- Cover sliders: una portada, navego con flechas ---------- */
+
+  // Genérico para galerías de fotos (planos y renders): reusa el lightbox para el zoom
+  const initPhotoCoverSlider = (name, itemSelector) => {
+    const stageImg = document.getElementById(`${name}-stage-img`);
+    const stageBtn = document.getElementById(`${name}-stage-btn`);
+    const caption = document.getElementById(`${name}-stage-caption`);
+    const counter = document.getElementById(`${name}-stage-counter`);
+    const source = document.querySelector(`[data-gallery="${name}"]`);
+    const prevBtn = document.querySelector(`[data-cover-prev="${name}"]`);
+    const nextBtn = document.querySelector(`[data-cover-next="${name}"]`);
+    if(!stageImg || !source) return;
+
+    const items = Array.from(source.querySelectorAll(itemSelector));
+    let index = 0;
+
+    const render = () => {
+      const item = items[index];
+      if(!item) return;
+      stageImg.src = item.dataset.thumb || item.dataset.full;
+      stageImg.alt = item.dataset.title || '';
+      if(caption) caption.textContent = item.dataset.title || '';
+      if(counter) counter.textContent = `${index + 1} / ${items.length}`;
+    };
+
+    if(prevBtn) prevBtn.addEventListener('click', () => {
+      index = (index - 1 + items.length) % items.length;
+      render();
+    });
+    if(nextBtn) nextBtn.addEventListener('click', () => {
+      index = (index + 1) % items.length;
+      render();
+    });
+    if(stageBtn) stageBtn.addEventListener('click', () => openLightbox(items[index]));
+
+    render();
+  };
+
+  ['plantas-edificio', 'unidades', 'locales', 'vistas'].forEach(name => initPhotoCoverSlider(name, '.plano-card'));
+  initPhotoCoverSlider('renders', '.masonry-item');
+
+  // Slider de video (Recorridos)
+  const videoStage = document.getElementById('recorridos-stage-video');
+  const videoStageCaption = document.getElementById('recorridos-stage-caption');
+  const videoStageCounter = document.getElementById('recorridos-stage-counter');
+  const videoSource = document.querySelector('[data-gallery="recorridos"]');
+
+  if(videoStage && videoSource){
+    const videoItems = Array.from(videoSource.querySelectorAll('.video-card'));
+    let videoIndex = 0;
+
+    const videoStageRender = () => {
+      const item = videoItems[videoIndex];
+      if(!item) return;
+      const wasPlaying = !videoStage.paused;
+      videoStage.pause();
+      videoStage.setAttribute('poster', item.dataset.poster || '');
+      videoStage.src = item.dataset.video;
+      videoStageCaption.textContent = item.dataset.title || '';
+      videoStageCounter.textContent = `${videoIndex + 1} / ${videoItems.length}`;
+      if(wasPlaying){
+        videoStage.play().catch(() => {});
+      }
+    };
+
+    document.querySelector('[data-cover-prev="recorridos"]').addEventListener('click', () => {
+      videoIndex = (videoIndex - 1 + videoItems.length) % videoItems.length;
+      videoStageRender();
+    });
+    document.querySelector('[data-cover-next="recorridos"]').addEventListener('click', () => {
+      videoIndex = (videoIndex + 1) % videoItems.length;
+      videoStageRender();
+    });
+
+    videoStageRender();
+  }
+</script>
+
+</body>
+</html>
