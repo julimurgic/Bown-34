@@ -737,7 +737,7 @@
   /* ---------- Cover slider (portada única + flechas) ---------- */
   .cover-slider{
     position:relative;
-    margin-top:-100px;
+    margin-top:0;
   }
   .cover-stage{
     position:relative;
