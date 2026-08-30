@@ -13,7 +13,8 @@
 
 <nav class="directorio" aria-label="Directorio de niveles">
   <div class="directorio-inner">
-    <a href="#contacto" data-label="Contacto"><span>06</span></a>
+    <a href="#contacto" data-label="Contacto"><span>07</span></a>
+    <a href="#unidades-tipos" data-label="Unidades"><span>06</span></a>
     <a href="#recorridos" data-label="Recorridos virtuales"><span>05</span></a>
     <a href="#terminaciones" data-label="Terminaciones"><span>04</span></a>
     <a href="#ubicacion" data-label="Ubicación"><span>03</span></a>
@@ -25,7 +26,8 @@
 </nav>
 
 <nav class="directorio-mobile" aria-label="Navegación de secciones">
-  <a href="#contacto" data-label="Contacto">06 · Contacto</a>
+  <a href="#contacto" data-label="Contacto">07 · Contacto</a>
+  <a href="#unidades-tipos" data-label="Unidades">06 · Unidades</a>
   <a href="#recorridos" data-label="Recorridos virtuales">05 · Recorridos</a>
   <a href="#terminaciones" data-label="Terminaciones">04 · Terminaciones</a>
   <a href="#ubicacion" data-label="Ubicación">03 · Ubicación</a>
@@ -59,53 +61,47 @@
     </div>
 
   <section class="renders" id="renders">
-    <p class="eyebrow">Imagenes</p>
-    <H2>El Proyecto</H2>
-    <div class="cover-slider" data-cover="renders">
-      <button class="cover-stage" type="button" id="renders-stage-btn" aria-label="Ver imagen ampliada">
-        <img id="renders-stage-img" src="" alt="">
-      </button>
-      <button type="button" class="cover-nav cover-nav--prev" data-cover-prev="renders" aria-label="Imagen anterior">‹</button>
-      <button type="button" class="cover-nav cover-nav--next" data-cover-next="renders" aria-label="Imagen siguiente">›</button>
-      <div class="cover-meta">
-        <span class="cover-caption" id="renders-stage-caption"></span>
-        <span class="cover-counter" id="renders-stage-counter"></span>
-      </div>
-    </div>
+    <p class="eyebrow">Imágenes</p>
+    <h2>El Proyecto</h2>
+    <p class="section-tag">Imágenes ilustrativas del proyecto de arquitectura. Las terminaciones finales pueden variar respecto del render.</p>
 
-    <div class="masonry-grid" data-gallery="renders" hidden>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/fachada-principal.jpg" data-thumb="assets/renders/thumb/fachada-principal.jpg" data-title="Fachada principal — Vista desde calle Brown">
-        <img src="assets/renders/thumb/fachada-principal.jpg" alt="Render de la fachada principal del edificio" loading="lazy">
-        <span class="masonry-caption">Fachada principal</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-2-ambientes.jpg" data-thumb="assets/renders/thumb/interior-2-ambientes.jpg" data-title="Interior — Unidad de 2 ambientes">
-        <img src="assets/renders/thumb/interior-2-ambientes.jpg" alt="Render de interior de una unidad de 2 ambientes" loading="lazy">
-        <span class="masonry-caption">Interior — 2 ambientes</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/cafeteria.jpg" data-thumb="assets/renders/thumb/cafeteria.jpg" data-title="Cafetería — Espacio común de planta baja">
-        <img src="assets/renders/thumb/cafeteria.jpg" alt="Render de la cafetería, espacio común del edificio" loading="lazy">
-        <span class="masonry-caption">Cafetería</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/perspectiva-aerea.jpg" data-thumb="assets/renders/thumb/perspectiva-aerea.jpg" data-title="Perspectiva aérea — El conjunto y sus terrazas">
-        <img src="assets/renders/thumb/perspectiva-aerea.jpg" alt="Render en perspectiva aérea del edificio" loading="lazy">
-        <span class="masonry-caption">Perspectiva aérea</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-monoambiente-1.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-1.jpg" data-title="Interior — Monoambiente, opción 1">
-        <img src="assets/renders/thumb/interior-monoambiente-1.jpg" alt="Render de interior de un monoambiente" loading="lazy">
-        <span class="masonry-caption">Monoambiente — opción 1</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/fachada-contrafrente.jpg" data-thumb="assets/renders/thumb/fachada-contrafrente.jpg" data-title="Fachada contrafrente — Vista posterior con jardín">
-        <img src="assets/renders/thumb/fachada-contrafrente.jpg" alt="Render de la fachada de contrafrente" loading="lazy">
-        <span class="masonry-caption">Contrafrente</span>
-      </button>
-      <button class="masonry-item" type="button" data-full="assets/renders/full/interior-monoambiente-2.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-2.jpg" data-title="Interior — Monoambiente, opción 2">
-        <img src="assets/renders/thumb/interior-monoambiente-2.jpg" alt="Render de interior de un monoambiente, otra vista" loading="lazy">
-        <span class="masonry-caption">Monoambiente — opción 2</span>
-      </button>
+    <div class="filmstrip" data-filmstrip="renders">
+      <button type="button" class="filmstrip-nav filmstrip-nav--prev" aria-label="Imagen anterior">‹</button>
+      <div class="filmstrip-viewport">
+        <div class="filmstrip-track" id="renders-filmstrip-track">
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/fachada-principal.jpg" data-thumb="assets/renders/thumb/fachada-principal.jpg" data-title="Fachada principal — Vista desde calle Brown">
+            <img src="assets/renders/thumb/fachada-principal.jpg" alt="Render de la fachada principal del edificio" loading="lazy">
+            <span class="filmstrip-caption">Fachada principal</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/fachada-contrafrente.jpg" data-thumb="assets/renders/thumb/fachada-contrafrente.jpg" data-title="Fachada contrafrente — Vista posterior con jardín">
+            <img src="assets/renders/thumb/fachada-contrafrente.jpg" alt="Render de la fachada de contrafrente" loading="lazy">
+            <span class="filmstrip-caption">Contrafrente</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/perspectiva-aerea.jpg" data-thumb="assets/renders/thumb/perspectiva-aerea.jpg" data-title="Perspectiva aérea — El conjunto y sus terrazas">
+            <img src="assets/renders/thumb/perspectiva-aerea.jpg" alt="Render en perspectiva aérea del edificio" loading="lazy">
+            <span class="filmstrip-caption">Perspectiva aérea</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/interior-2-ambientes.jpg" data-thumb="assets/renders/thumb/interior-2-ambientes.jpg" data-title="Interior — Unidad de 2 ambientes">
+            <img src="assets/renders/thumb/interior-2-ambientes.jpg" alt="Render de interior de una unidad de 2 ambientes" loading="lazy">
+            <span class="filmstrip-caption">Interior — 2 ambientes</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/interior-monoambiente-1.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-1.jpg" data-title="Interior — Monoambiente, opción 1">
+            <img src="assets/renders/thumb/interior-monoambiente-1.jpg" alt="Render de interior de un monoambiente" loading="lazy">
+            <span class="filmstrip-caption">Monoambiente — opción 1</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/cafeteria.jpg" data-thumb="assets/renders/thumb/cafeteria.jpg" data-title="Cafetería — Espacio común de planta baja">
+            <img src="assets/renders/thumb/cafeteria.jpg" alt="Render de la cafetería, espacio común del edificio" loading="lazy">
+            <span class="filmstrip-caption">Cafetería</span>
+          </button>
+          <button class="filmstrip-item" type="button" data-full="assets/renders/full/interior-monoambiente-2.jpg" data-thumb="assets/renders/thumb/interior-monoambiente-2.jpg" data-title="Interior — Monoambiente, opción 2">
+            <img src="assets/renders/thumb/interior-monoambiente-2.jpg" alt="Render de interior de un monoambiente, otra vista" loading="lazy">
+            <span class="filmstrip-caption">Monoambiente — opción 2</span>
+          </button>
+        </div>
+      </div>
+      <button type="button" class="filmstrip-nav filmstrip-nav--next" aria-label="Imagen siguiente">›</button>
     </div>
   </section>
-
-
 
   <section class="ubicacion" id="ubicacion">
     <div class="ubicacion-grid">
@@ -189,9 +185,10 @@
       <p>Videos de recorrido sobre el proyecto de arquitectura, espacio por espacio.</p>
     </div>
 
-    <div class="cover-slider cover-slider--video" data-cover="recorridos">
-      <div class="cover-stage cover-stage--video">
+    <div class="cover-slider cover-slider--video recorridos-desktop-only" data-cover="recorridos">
+      <div class="cover-stage cover-stage--video" id="recorridos-stage-wrap">
         <video id="recorridos-stage-video" controls playsinline preload="metadata"></video>
+        <img class="cover-frame-overlay" id="recorridos-stage-frame" src="" alt="" aria-hidden="true">
       </div>
       <button type="button" class="cover-nav cover-nav--prev" data-cover-prev="recorridos" aria-label="Recorrido anterior">‹</button>
       <button type="button" class="cover-nav cover-nav--next" data-cover-next="recorridos" aria-label="Recorrido siguiente">›</button>
@@ -200,6 +197,8 @@
         <span class="cover-counter" id="recorridos-stage-counter"></span>
       </div>
     </div>
+
+    <div class="recorridos-mobile-list recorridos-mobile-only" id="recorridos-mobile-list"></div>
 
     <div class="video-grid" data-gallery="recorridos" hidden>
       <button class="video-card" type="button" data-video="assets/videos/mp4/recorrido-ingreso.mp4" data-poster="assets/videos/poster/recorrido-ingreso.jpg" data-title="Recorrido — Ingreso">
@@ -226,6 +225,81 @@
         <img src="assets/videos/poster/recorrido-monoambiente-2.jpg" alt="Cuadro del recorrido en video de un monoambiente, otra unidad" loading="lazy">
         <span class="video-card-play" aria-hidden="true">▶</span>
         <span class="plano-card-label"><strong>Monoambiente</strong>Opción 2</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section class="unidades-tipos" id="unidades-tipos">
+    <p class="eyebrow">Unidades</p>
+    <h2>Elegí tu tipología</h2>
+    <p class="section-tag">Cinco plantas de 1 dormitorio y monoambientes. Elegí una para ver el plano completo.</p>
+
+    <div class="tipos-tabs" role="tablist">
+      <button class="tipos-tab" type="button" role="tab">Tipo T</button>
+      <button class="tipos-tab" type="button" role="tab">Tipo R</button>
+      <button class="tipos-tab" type="button" role="tab">Tipo Ñ</button>
+      <button class="tipos-tab" type="button" role="tab">Tipo N</button>
+      <button class="tipos-tab" type="button" role="tab">Tipo M</button>
+    </div>
+
+    <div class="tipos-panel">
+      <div class="tipos-info">
+        <span class="tipos-info-label" id="tipos-current-label">Tipo T</span>
+        <ul class="tipos-rooms" id="tipos-current-rooms"></ul>
+        <p class="tipos-desc" id="tipos-current-desc"></p>
+        <a href="#contacto" class="tipos-cta">Consultar esta unidad <span aria-hidden="true">→</span></a>
+      </div>
+      <button class="tipos-image" id="tipos-image-btn" type="button" aria-label="Ver plano ampliado">
+        <img id="tipos-image-img" src="" alt="">
+      </button>
+    </div>
+
+    <div class="planos-grid" data-gallery="unidades-tipos" hidden>
+      <button class="plano-card" type="button"
+        data-full="assets/planos/tipos/tipo-t.jpg"
+        data-thumb="assets/planos/tipos/tipo-t.jpg"
+        data-title="Unidad Tipo T"
+        data-label="Tipo T"
+        data-desc="Dormitorio, baño, estar-cocina-comedor y terraza propia."
+        data-rooms="Dormitorio,Baño,Estar-cocina-comedor,Terraza propia">
+        <img src="assets/planos/tipos/tipo-t.jpg" alt="Plano de la unidad tipo T" loading="lazy">
+      </button>
+      <button class="plano-card" type="button"
+        data-full="assets/planos/tipos/tipo-r.jpg"
+        data-thumb="assets/planos/tipos/tipo-r.jpg"
+        data-title="Unidad Tipo R"
+        data-label="Tipo R"
+        data-desc="Dormitorio, baño y estar-cocina-comedor en planta compacta."
+        data-rooms="Dormitorio,Baño,Estar-cocina-comedor">
+        <img src="assets/planos/tipos/tipo-r.jpg" alt="Plano de la unidad tipo R" loading="lazy">
+      </button>
+      <button class="plano-card" type="button"
+        data-full="assets/planos/tipos/tipo-enie.jpg"
+        data-thumb="assets/planos/tipos/tipo-enie.jpg"
+        data-title="Unidad Tipo Ñ"
+        data-label="Tipo Ñ"
+        data-desc="Dormitorio, baño y estar-cocina-comedor en planta alargada."
+        data-rooms="Dormitorio,Baño,Estar-cocina-comedor">
+        <img src="assets/planos/tipos/tipo-enie.jpg" alt="Plano de la unidad tipo Ñ" loading="lazy">
+      </button>
+      <button class="plano-card" type="button"
+        data-full="assets/planos/tipos/tipo-n.jpg"
+        data-thumb="assets/planos/tipos/tipo-n.jpg"
+        data-title="Unidad Tipo N"
+        data-label="Tipo N"
+        data-desc="Dormitorio, baño y estar-cocina-comedor con placares en la circulación."
+        data-rooms="Dormitorio,Baño,Estar-cocina-comedor">
+        <img src="assets/planos/tipos/tipo-n.jpg" alt="Plano de la unidad tipo N" loading="lazy">
+      </button>
+      <button class="plano-card" type="button"
+        data-full="assets/planos/tipos/tipo-m.jpg"
+        data-thumb="assets/planos/tipos/tipo-m.jpg"
+        data-title="Unidad Tipo M"
+        data-label="Tipo M"
+        data-desc="Monoambiente: baño y estar-cocina-comedor integrado."
+        data-rooms="Baño,Estar-cocina-comedor (integra el dormitorio)">
+        <img src="assets/planos/tipos/tipo-m.jpg" alt="Plano de la unidad tipo M" loading="lazy">
       </button>
     </div>
   </section>
@@ -408,8 +482,8 @@
   };
 
   const openLightbox = (card) => {
-    const groupEl = card.closest('.masonry-grid, .carousel-track, .planos-grid');
-    currentGroup = groupEl ? Array.from(groupEl.querySelectorAll('.plano-card, .masonry-item')) : [card];
+    const groupEl = card.closest('.masonry-grid, .carousel-track, .planos-grid, .filmstrip-track');
+    currentGroup = groupEl ? Array.from(groupEl.querySelectorAll('.plano-card, .masonry-item, .filmstrip-item:not([data-clone])')) : [card];
     currentIndex = Math.max(0, currentGroup.indexOf(card));
     updateNavVisibility();
     renderCard(card);
@@ -457,82 +531,453 @@
     if(e.key === 'ArrowLeft') goTo(currentIndex - 1);
   });
 
-  /* ---------- Cover sliders: una portada, navego con flechas ---------- */
+  /* ---------- Cover sliders: portada con arrastre animado ---------- */
+
+  // Motor genérico de arrastre: el "frame" (imagen visible) sigue al dedo mientras
+  // se arrastra, y al soltar se desliza del todo hacia el siguiente/anterior o
+  // vuelve a su lugar con una animación, en vez de cambiar de golpe.
+  const createDragStage = ({ container, frame, items, getSrc, getAlt, onSettle, startIndex }) => {
+    let index = startIndex || 0;
+    let isAnimating = false;
+    let dragging = false;
+    let dragStartX = 0;
+    let dragDir = 0;
+    let ghost = null;
+    let stageWidth = 0;
+
+    const applySrc = (imgEl, item) => {
+      imgEl.src = getSrc(item);
+      imgEl.alt = getAlt ? getAlt(item) : '';
+    };
+
+    const makeGhost = (item) => {
+      const g = frame.cloneNode();
+      g.classList.add('cover-frame-ghost');
+      g.removeAttribute('id');
+      applySrc(g, item);
+      container.appendChild(g);
+      return g;
+    };
+
+    const settle = (newIndex) => {
+      index = newIndex;
+      const item = items[index];
+      applySrc(frame, item);
+      frame.style.transition = 'none';
+      frame.style.transform = 'translateX(0)';
+      if(ghost){ ghost.remove(); ghost = null; }
+      isAnimating = false;
+      if(onSettle) onSettle(index, item);
+    };
+
+    // Deslizamiento "de golpe pero animado": usado por los botones ‹ › y por el teclado
+    const slide = (dir) => {
+      if(isAnimating || items.length < 2) return;
+      const newIndex = (index + dir + items.length) % items.length;
+      isAnimating = true;
+      stageWidth = container.getBoundingClientRect().width;
+
+      const g = makeGhost(items[newIndex]);
+      g.style.transition = 'none';
+      g.style.transform = `translateX(${dir * 100}%)`;
+      void g.offsetWidth;
+
+      frame.style.transition = 'transform .38s cubic-bezier(.22,.7,.32,1)';
+      g.style.transition = 'transform .38s cubic-bezier(.22,.7,.32,1)';
+      frame.style.transform = `translateX(${-dir * 100}%)`;
+      g.style.transform = 'translateX(0)';
+
+      g.addEventListener('transitionend', () => settle(newIndex), { once: true });
+    };
+
+    const goPrev = () => slide(-1);
+    const goNext = () => slide(1);
+
+    // Arrastre táctil: el frame sigue al dedo en tiempo real
+    container.addEventListener('touchstart', (e) => {
+      if(isAnimating || e.touches.length !== 1 || items.length < 2) return;
+      dragging = true;
+      dragDir = 0;
+      dragStartX = e.touches[0].clientX;
+      stageWidth = container.getBoundingClientRect().width;
+      frame.style.transition = 'none';
+      container.dataset.dragged = '';
+    }, { passive: true });
+
+    container.addEventListener('touchmove', (e) => {
+      if(!dragging) return;
+      const dx = e.touches[0].clientX - dragStartX;
+      if(Math.abs(dx) < 4) return;
+      container.dataset.dragged = '1';
+      const dir = dx < 0 ? 1 : -1;
+      if(!ghost || dragDir !== dir){
+        if(ghost) ghost.remove();
+        dragDir = dir;
+        const newIndex = (index + dir + items.length) % items.length;
+        ghost = makeGhost(items[newIndex]);
+        ghost.style.transition = 'none';
+      }
+      const clamped = Math.max(-stageWidth, Math.min(stageWidth, dx));
+      frame.style.transform = `translateX(${clamped}px)`;
+      ghost.style.transform = `translateX(${clamped + dragDir * stageWidth}px)`;
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+      if(!dragging) return;
+      dragging = false;
+      const dx = e.changedTouches[0].clientX - dragStartX;
+      const threshold = stageWidth * 0.22;
+
+      frame.style.transition = 'transform .3s cubic-bezier(.22,.7,.32,1)';
+      if(ghost) ghost.style.transition = 'transform .3s cubic-bezier(.22,.7,.32,1)';
+
+      if(Math.abs(dx) > threshold && ghost){
+        const dir = dragDir;
+        const newIndex = (index + dir + items.length) % items.length;
+        isAnimating = true;
+        frame.style.transform = `translateX(${-dir * stageWidth}px)`;
+        ghost.style.transform = 'translateX(0)';
+        const g = ghost;
+        g.addEventListener('transitionend', () => settle(newIndex), { once: true });
+      } else {
+        frame.style.transform = 'translateX(0)';
+        if(ghost){
+          const g = ghost;
+          g.style.transform = `translateX(${dragDir * stageWidth}px)`;
+          g.addEventListener('transitionend', () => g.remove(), { once: true });
+          ghost = null;
+        }
+      }
+    }, { passive: true });
+
+    return { goPrev, goNext, getIndex: () => index };
+  };
 
   // Genérico para galerías de fotos (planos y renders): reusa el lightbox para el zoom
   const initPhotoCoverSlider = (name, itemSelector) => {
+    const stage = document.getElementById(`${name}-stage-btn`);
     const stageImg = document.getElementById(`${name}-stage-img`);
-    const stageBtn = document.getElementById(`${name}-stage-btn`);
     const caption = document.getElementById(`${name}-stage-caption`);
     const counter = document.getElementById(`${name}-stage-counter`);
     const source = document.querySelector(`[data-gallery="${name}"]`);
     const prevBtn = document.querySelector(`[data-cover-prev="${name}"]`);
     const nextBtn = document.querySelector(`[data-cover-next="${name}"]`);
-    if(!stageImg || !source) return;
+    if(!stage || !stageImg || !source) return;
 
     const items = Array.from(source.querySelectorAll(itemSelector));
-    let index = 0;
+    if(!items.length) return;
 
-    const render = () => {
-      const item = items[index];
-      if(!item) return;
-      stageImg.src = item.dataset.thumb || item.dataset.full;
-      stageImg.alt = item.dataset.title || '';
+    const updateMeta = (index, item) => {
       if(caption) caption.textContent = item.dataset.title || '';
       if(counter) counter.textContent = `${index + 1} / ${items.length}`;
     };
 
-    if(prevBtn) prevBtn.addEventListener('click', () => {
-      index = (index - 1 + items.length) % items.length;
-      render();
+    const drag = createDragStage({
+      container: stage,
+      frame: stageImg,
+      items,
+      getSrc: (item) => item.dataset.thumb || item.dataset.full,
+      getAlt: (item) => item.dataset.title || '',
+      onSettle: updateMeta,
     });
-    if(nextBtn) nextBtn.addEventListener('click', () => {
-      index = (index + 1) % items.length;
-      render();
-    });
-    if(stageBtn) stageBtn.addEventListener('click', () => openLightbox(items[index]));
 
-    render();
+    if(prevBtn) prevBtn.addEventListener('click', drag.goPrev);
+    if(nextBtn) nextBtn.addEventListener('click', drag.goNext);
+    stage.addEventListener('click', (e) => {
+      // el arrastre no debe disparar además la apertura del lightbox
+      if(stage.dataset.dragged === '1'){ stage.dataset.dragged = ''; return; }
+      openLightbox(items[drag.getIndex()]);
+    });
+
+    updateMeta(0, items[0]);
   };
 
   ['plantas-edificio', 'unidades', 'locales', 'vistas'].forEach(name => initPhotoCoverSlider(name, '.plano-card'));
-  initPhotoCoverSlider('renders', '.masonry-item');
 
-  // Slider de video (Recorridos)
+  // Slider de video (Recorridos): el overlay de poster es lo que se arrastra;
+  // el <video> real solo cambia de fuente una vez que la animación termina.
+  const videoWrap = document.getElementById('recorridos-stage-wrap');
   const videoStage = document.getElementById('recorridos-stage-video');
+  const videoFrame = document.getElementById('recorridos-stage-frame');
   const videoStageCaption = document.getElementById('recorridos-stage-caption');
   const videoStageCounter = document.getElementById('recorridos-stage-counter');
   const videoSource = document.querySelector('[data-gallery="recorridos"]');
 
-  if(videoStage && videoSource){
+  if(videoWrap && videoStage && videoFrame && videoSource){
     const videoItems = Array.from(videoSource.querySelectorAll('.video-card'));
-    let videoIndex = 0;
 
-    const videoStageRender = () => {
-      const item = videoItems[videoIndex];
-      if(!item) return;
-      const wasPlaying = !videoStage.paused;
-      videoStage.pause();
-      videoStage.setAttribute('poster', item.dataset.poster || '');
-      videoStage.src = item.dataset.video;
-      videoStageCaption.textContent = item.dataset.title || '';
-      videoStageCounter.textContent = `${videoIndex + 1} / ${videoItems.length}`;
-      if(wasPlaying){
-        videoStage.play().catch(() => {});
+    if(videoItems.length){
+      const showOverlay = () => { videoFrame.style.opacity = '1'; };
+      const hideOverlay = () => { videoFrame.style.opacity = '0'; };
+
+      const applyVideoContent = (index, item) => {
+        const wasPlaying = !videoStage.paused;
+        videoStage.pause();
+        videoStage.setAttribute('poster', item.dataset.poster || '');
+        videoStage.src = item.dataset.video;
+        videoStageCaption.textContent = item.dataset.title || '';
+        videoStageCounter.textContent = `${index + 1} / ${videoItems.length}`;
+        if(wasPlaying){
+          videoStage.play().catch(() => {});
+        }
+        hideOverlay();
+      };
+
+      videoFrame.src = videoItems[0].dataset.poster || '';
+      hideOverlay();
+
+      videoWrap.addEventListener('touchstart', showOverlay, { passive: true, capture: true });
+      document.querySelector('[data-cover-prev="recorridos"]').addEventListener('mousedown', showOverlay);
+      document.querySelector('[data-cover-next="recorridos"]').addEventListener('mousedown', showOverlay);
+
+      const videoDrag = createDragStage({
+        container: videoWrap,
+        frame: videoFrame,
+        items: videoItems,
+        getSrc: (item) => item.dataset.poster || '',
+        onSettle: applyVideoContent,
+      });
+
+      document.querySelector('[data-cover-prev="recorridos"]').addEventListener('click', videoDrag.goPrev);
+      document.querySelector('[data-cover-next="recorridos"]').addEventListener('click', videoDrag.goNext);
+
+      applyVideoContent(0, videoItems[0]);
+    }
+  }
+
+  /* ---------- Filmstrip (Renders): columnas en fila, auto-avance cada 5s ---------- */
+  const initFilmstrip = (name) => {
+    const root = document.querySelector(`[data-filmstrip="${name}"]`);
+    const track = document.getElementById(`${name}-filmstrip-track`);
+    if(!root || !track) return;
+
+    const prevBtn = root.querySelector('.filmstrip-nav--prev');
+    const nextBtn = root.querySelector('.filmstrip-nav--next');
+    const viewport = root.querySelector('.filmstrip-viewport');
+    const realItems = Array.from(track.children);
+    const total = realItems.length;
+    if(total < 2) return;
+
+    // Clonamos algunos ítems de cada punta para poder "loopear" infinito
+    // en ambas direcciones sin que se note el salto.
+    const CLONES = Math.min(3, total);
+    const headClones = realItems.slice(0, CLONES).map(el => {
+      const c = el.cloneNode(true);
+      c.setAttribute('data-clone', '1');
+      c.setAttribute('tabindex', '-1');
+      c.setAttribute('aria-hidden', 'true');
+      return c;
+    });
+    const tailClones = realItems.slice(-CLONES).map(el => {
+      const c = el.cloneNode(true);
+      c.setAttribute('data-clone', '1');
+      c.setAttribute('tabindex', '-1');
+      c.setAttribute('aria-hidden', 'true');
+      return c;
+    });
+    tailClones.forEach(c => track.insertBefore(c, track.firstChild));
+    headClones.forEach(c => track.appendChild(c));
+
+    const allNodes = Array.from(track.children);
+    let index = CLONES; // índice del primer ítem real dentro de allNodes
+    let isAnimating = false;
+    let dragging = false;
+    let dragStartX = 0;
+    let dragDelta = 0;
+
+    const stepWidth = () => {
+      const r0 = allNodes[0].getBoundingClientRect();
+      const r1 = allNodes[1] ? allNodes[1].getBoundingClientRect() : null;
+      return r1 ? (r1.left - r0.left) : r0.width;
+    };
+
+    const applyTransform = (withTransition) => {
+      track.style.transition = withTransition ? 'transform .6s cubic-bezier(.22,.7,.32,1)' : 'none';
+      track.style.transform = `translateX(${-index * stepWidth()}px)`;
+    };
+
+    // Posición inicial, sin animación
+    applyTransform(false);
+    // Recalcular si cambia el tamaño de ventana (breakpoints responsive)
+    window.addEventListener('resize', () => applyTransform(false));
+
+    const normalize = () => {
+      // Si entramos en la zona clonada, saltamos sin transición al equivalente real
+      if(index >= CLONES + total){
+        index -= total;
+        applyTransform(false);
+      } else if(index < CLONES){
+        index += total;
+        applyTransform(false);
       }
     };
 
-    document.querySelector('[data-cover-prev="recorridos"]').addEventListener('click', () => {
-      videoIndex = (videoIndex - 1 + videoItems.length) % videoItems.length;
-      videoStageRender();
-    });
-    document.querySelector('[data-cover-next="recorridos"]').addEventListener('click', () => {
-      videoIndex = (videoIndex + 1) % videoItems.length;
-      videoStageRender();
+    const goTo = (newIndex) => {
+      if(isAnimating) return;
+      isAnimating = true;
+      index = newIndex;
+      applyTransform(true);
+    };
+
+    track.addEventListener('transitionend', (e) => {
+      if(e.target !== track) return;
+      isAnimating = false;
+      normalize();
     });
 
-    videoStageRender();
-  }
+    const goNext = () => goTo(index + 1);
+    const goPrev = () => goTo(index - 1);
+
+    // Auto-avance cada 5 segundos
+    let timer = null;
+    const startAuto = () => {
+      stopAuto();
+      timer = setInterval(goNext, 5000);
+    };
+    const stopAuto = () => { if(timer){ clearInterval(timer); timer = null; } };
+    startAuto();
+
+    const restartAuto = () => { stopAuto(); startAuto(); };
+
+    if(prevBtn) prevBtn.addEventListener('click', () => { goPrev(); restartAuto(); });
+    if(nextBtn) nextBtn.addEventListener('click', () => { goNext(); restartAuto(); });
+
+    // Pausa al pasar el mouse (desktop), para poder mirar tranquilo
+    root.addEventListener('mouseenter', stopAuto);
+    root.addEventListener('mouseleave', startAuto);
+
+    // Arrastre táctil: sigue al dedo, y al soltar decide si avanza o vuelve
+    viewport.addEventListener('touchstart', (e) => {
+      if(isAnimating || e.touches.length !== 1) return;
+      dragging = true;
+      dragDelta = 0;
+      dragStartX = e.touches[0].clientX;
+      track.style.transition = 'none';
+      stopAuto();
+    }, { passive: true });
+
+    viewport.addEventListener('touchmove', (e) => {
+      if(!dragging) return;
+      dragDelta = e.touches[0].clientX - dragStartX;
+      track.style.transform = `translateX(${-index * stepWidth() + dragDelta}px)`;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', () => {
+      if(!dragging) return;
+      dragging = false;
+      const threshold = stepWidth() * 0.2;
+      if(Math.abs(dragDelta) > threshold){
+        if(dragDelta < 0){ goNext(); } else { goPrev(); }
+      } else {
+        applyTransform(true);
+      }
+      startAuto();
+    });
+
+    // Tap/click para ampliar en el visor — evitamos que un arrastre dispare el zoom
+    track.addEventListener('click', (e) => {
+      if(Math.abs(dragDelta) > 6){ dragDelta = 0; return; }
+      const item = e.target.closest('.filmstrip-item');
+      if(!item || item.hasAttribute('data-clone')) return;
+      openLightbox(item);
+    });
+  };
+
+  initFilmstrip('renders');
+
+  /* ---------- Unidades: pestañas por tipología ---------- */
+  (() => {
+    const tabs = Array.from(document.querySelectorAll('.tipos-tab'));
+    const source = document.querySelector('[data-gallery="unidades-tipos"]');
+    if(!tabs.length || !source) return;
+
+    const items = Array.from(source.querySelectorAll('.plano-card'));
+    const img = document.getElementById('tipos-image-img');
+    const imgBtn = document.getElementById('tipos-image-btn');
+    const label = document.getElementById('tipos-current-label');
+    const desc = document.getElementById('tipos-current-desc');
+    const rooms = document.getElementById('tipos-current-rooms');
+    let current = 0;
+
+    const render = (index) => {
+      const item = items[index];
+      if(!item) return;
+      current = index;
+
+      img.style.opacity = '0';
+      window.setTimeout(() => {
+        img.src = item.dataset.full;
+        img.alt = item.dataset.title || '';
+        img.onload = () => { img.style.opacity = '1'; };
+      }, 150);
+
+      label.textContent = item.dataset.label || '';
+      desc.textContent = item.dataset.desc || '';
+      rooms.innerHTML = '';
+      (item.dataset.rooms || '').split(',').forEach(room => {
+        const li = document.createElement('li');
+        li.textContent = room.trim();
+        rooms.appendChild(li);
+      });
+
+      tabs.forEach((t, i) => t.classList.toggle('active', i === index));
+    };
+
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => render(i)));
+    imgBtn.addEventListener('click', () => openLightbox(items[current]));
+
+    render(0);
+  })();
+
+  /* ---------- Recorridos en mobile: lista apilada con autoplay al hacer scroll ---------- */
+  (() => {
+    const list = document.getElementById('recorridos-mobile-list');
+    const source = document.querySelector('[data-gallery="recorridos"]');
+    if(!list || !source) return;
+
+    const items = Array.from(source.querySelectorAll('.video-card'));
+    if(!items.length) return;
+
+    const videos = [];
+
+    items.forEach(item => {
+      const wrap = document.createElement('div');
+      wrap.className = 'recorridos-mobile-item';
+
+      const video = document.createElement('video');
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.setAttribute('playsinline', '');
+      video.setAttribute('preload', 'metadata');
+      video.setAttribute('poster', item.dataset.poster || '');
+      video.src = item.dataset.video;
+
+      const caption = document.createElement('span');
+      caption.className = 'recorridos-mobile-caption';
+      caption.textContent = item.dataset.title || '';
+
+      wrap.appendChild(video);
+      wrap.appendChild(caption);
+      list.appendChild(wrap);
+      videos.push(video);
+    });
+
+    // Cada video se reproduce solo (silenciado) mientras está visible en pantalla,
+    // y se pausa al salir de vista — evita que los 5 reproduzcan a la vez.
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if(entry.isIntersecting && entry.intersectionRatio >= 0.6){
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: [0, 0.6, 1] });
+
+    videos.forEach(v => observer.observe(v));
+  })();
 </script>
 
 </body>
