@@ -1352,3 +1352,87 @@
     .hero h1{font-size:2.15rem;}
     .eyebrow{font-size:0.66rem;}
   }
+
+
+  /* ---------- Confirmación del formulario ---------- */
+  .form-success{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:start;
+    gap:1rem;
+    padding:1.2rem;
+    margin-top:0.5rem;
+    border:1px solid var(--brass-bright);
+    background:var(--ink-soft);
+    border-radius:4px;
+    opacity:0;
+    transform:translateY(10px);
+    max-height:0;
+    overflow:hidden;
+    padding-top:0;
+    padding-bottom:0;
+    border-width:0;
+    pointer-events:none;
+    transition:opacity .35s ease, transform .35s ease, max-height .35s ease, padding .35s ease, border-width .35s ease;
+  }
+
+  .form-success.show{
+    opacity:1;
+    transform:translateY(0);
+    max-height:220px;
+    padding:1.2rem;
+    border-width:1px;
+    pointer-events:auto;
+  }
+
+  .form-success-icon{
+    width:2.7rem;
+    height:2.7rem;
+    display:grid;
+    place-items:center;
+    flex-shrink:0;
+    border-radius:50%;
+    background:var(--brass-bright);
+    color:var(--ink);
+    font-family:var(--display);
+    font-size:1.25rem;
+  }
+
+  .form-success-label{
+    display:block;
+    font-family:var(--mono);
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--paper-dim);
+    margin-bottom:0.35rem;
+  }
+
+  .form-success h3{
+    font-size:1.1rem;
+    text-transform:none;
+    margin:0;
+  }
+
+  .form-success p{
+    margin-top:0.45rem;
+    font-size:0.9rem;
+    max-width:42ch;
+  }
+
+  .form-success-close{
+    width:2rem;
+    height:2rem;
+    border:0;
+    background:transparent;
+    color:var(--paper);
+    font-size:1.4rem;
+    line-height:1;
+    cursor:pointer;
+  }
+
+  @media (max-width:480px){
+    .form-success{gap:0.8rem;}
+    .form-success.show{max-height:280px;}
+    .form-success-icon{width:2.4rem; height:2.4rem;}
+  }

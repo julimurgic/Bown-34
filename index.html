@@ -49,7 +49,7 @@
         <p class="eyebrow">M2D Desarrollos</p>
         <h1>BR<em>O</em>WN<br><em>3</em>4</h1>
         <p class="hero-sub">combina calidad constructiva, eficiencia energética, diseño contemporáneo y materiales seleccionados para ofrecer una excelente experiencia de uso y una inversión sólida a largo plazo.</p>
-              <a class="cta-pill" href="unidades.html">Ver unidades disponibles<span aria-hidden="true">→</span></a>
+              <a class="cta-pill" href="#unidades-tipos">Ver unidades disponibles<span aria-hidden="true">→</span></a>
         <div class="hero-meta">
           <div><strong>Ubicación</strong>San Carlos de Bariloche</div>
           <div><strong>Departamentos</strong>1 y 2 ambientes</div>
@@ -232,8 +232,8 @@
 
   <section class="unidades-tipos" id="unidades-tipos">
     <p class="eyebrow">Unidades</p>
-    <h2>Elegí tu tipología</h2>
-    <p class="section-tag">Cinco plantas de 1 dormitorio y monoambientes. Elegí una para ver el plano completo.</p>
+    <h2>Tipos de unidades</h2>
+    <p class="section-tag">Departamentos de 1 y 2 ambientes. Elegí una para ver el plano completo.</p>
 
     <div class="tipos-tabs" role="tablist">
       <button class="tipos-tab" type="button" role="tab">Tipo T</button>
@@ -312,7 +312,10 @@
         <h2>Pedí más información</h2>
         <p>Dejanos tus datos y te contactamos con el detalle de plantas, precios y forma de pago.</p>
       </div>
-      <form class="form" onsubmit="event.preventDefault();">
+      <form class="form" id="contact-form" action="https://formsubmit.co/ajax/julimurgic@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nueva consulta desde Edificio Brown M2D">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <div class="field">
           <label for="nombre">Nombre y apellido</label>
           <input id="nombre" type="text" name="nombre" placeholder="Nombre y apellido" required>
@@ -330,6 +333,16 @@
           <textarea id="mensaje" name="mensaje" placeholder="Contanos tu interes"></textarea>
         </div>
         <button class="btn" type="submit">Solicitar información</button>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite" aria-hidden="true">
+          <div class="form-success-icon" aria-hidden="true">✓</div>
+          <div>
+            <span class="form-success-label">Mensaje enviado</span>
+            <h3>¡Gracias por contactarte!</h3>
+            <p>Recibimos tu consulta correctamente. Nos comunicaremos con vos a la brevedad.</p>
+          </div>
+          <button type="button" class="form-success-close" id="form-success-close" aria-label="Cerrar mensaje">×</button>
+        </div>
       </form>
     </div>
   </section>
@@ -978,6 +991,57 @@
 
     videos.forEach(v => observer.observe(v));
   })();
+  /* ---------- Confirmación formulario de contacto ---------- */
+  (() => {
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+    const closeSuccess = document.getElementById('form-success-close');
+
+    if(!form || !success) return;
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalText = submitButton?.textContent;
+      if(submitButton){
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if(!response.ok) throw new Error('No se pudo enviar el formulario');
+
+        success.classList.add('show');
+        success.setAttribute('aria-hidden', 'false');
+        form.reset();
+
+        window.setTimeout(() => {
+          success.classList.remove('show');
+          success.setAttribute('aria-hidden', 'true');
+        }, 6000);
+      } catch(error) {
+        alert('Hubo un problema al enviar la consulta. Por favor, intentá nuevamente.');
+      } finally {
+        if(submitButton){
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
+      }
+    });
+
+    closeSuccess?.addEventListener('click', () => {
+      success.classList.remove('show');
+      success.setAttribute('aria-hidden', 'true');
+    });
+  })();
+
 </script>
 
 </body>
